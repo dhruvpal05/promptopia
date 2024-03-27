@@ -6,6 +6,10 @@ import { useRouter } from 'next/navigation';
 import Form from '@components/Form';
 
 function CreatePrompt() {
+    const router = useRouter();
+    const { data: session } = useSession();
+
+
     const [submitting, setSubmitting] = useState(false);
     const [post, setPost] = useState({
         promt: "",
@@ -30,7 +34,7 @@ function CreatePrompt() {
           } catch (error) {
             console.log(error);
           } finally {
-            setIsSubmitting(false);
+            setSubmitting(false);
           }
     };
   return (
