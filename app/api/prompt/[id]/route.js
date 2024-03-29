@@ -1,9 +1,9 @@
 import Prompt from "@models/prompt";
-import { connectToDB } from "@utils/database";
+import { connectToDatabase } from "@utils/database";
 
 export const GET = async (request, { params }) => {
     try {
-        await connectToDB()
+        await connectToDatabase()
 
         const prompt = await Prompt.findById(params.id).populate("creator")
         if (!prompt) return new Response("Prompt Not Found", { status: 404 });
