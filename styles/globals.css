@@ -151,10 +151,11 @@
 /* PromptCard Component */
 .prompt_card {
   @apply flex-1 p-6 pb-4 border border-gray-300 rounded-lg break-inside-avoid bg-white/20 bg-clip-padding backdrop-blur-lg backdrop-filter;
-  width: 100%; /* Adjust to desired width */
+   /* Adjust to desired width */
   height: 200%; /* Height to maintain 1:2 ratio relative to the width */
   max-height: 200vh; /* Ensure it maintains the ratio */
-  overflow-y: auto; /* Make the card scrollable vertically */
+  overflow-y: "auto"; /* Make the card scrollable vertically */
+  width: "300px"   
 }
 
 

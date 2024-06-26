@@ -19,7 +19,7 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
     };
 
     return (
-        <div className="promt_card">
+        <div className="prompt_card" >
             <div className="flex items-start justify-between gap-5">
                 <div
                     className='flex items-center justify-start flex-1 gap-3 cursor-pointer'
@@ -79,7 +79,7 @@ function PromptCard({ post, handleTagClick, handleEdit, handleDelete }) {
                 </div>
             )}
         </div>
-    )
+    );
 }
 
-export default PromptCard
+export default PromptCard;
