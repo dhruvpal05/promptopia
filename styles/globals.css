@@ -4,9 +4,7 @@
 @tailwind components;
 @tailwind utilities;
 
-/* 
-  Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
-*/
+
 
 .main {
   width: 100vw;
@@ -90,7 +88,7 @@
 }
 
 .orange_gradient {
-  @apply text-transparent bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text;
+  @apply text-transparent bg-gradient-to-r from-purple-500 via-purple-950 to-purple-500 bg-clip-text;
 }
 
 .green_gradient {

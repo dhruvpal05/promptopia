@@ -13,6 +13,7 @@ const Rootlayout = ({ children }) => {
     return (
         <html lang='en'>
             <head>
+                <link rel="icon" href="/favicon.ico" sizes="any" />
                 <title>{metadata.title}</title>
                 <meta name="description" content={metadata.description} />
                 <Script async src="https://www.googletagmanager.com/gtag/js?id=G-NSQYYF9GDK"></Script>
@@ -26,13 +27,13 @@ const Rootlayout = ({ children }) => {
             </head>
             <body>
                 <Provider>
-                    <div className="main">
+                    {/* <div className="main">
                         <div className="gradient" />
-                    </div>
+                    </div> */}
                     <main className="app">
                         <Nav />
                         {children}
-                        <Analytics/>
+                        <Analytics />
                     </main>
                 </Provider>
             </body>
